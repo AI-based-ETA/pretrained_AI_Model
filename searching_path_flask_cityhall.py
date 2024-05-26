@@ -3,8 +3,11 @@ import pandas as pd
 import heapq
 from datetime import datetime, timedelta
 import subprocess
+import os
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # 파일 경로
 MODIFY_FROM_TO_COST_PATH = 'modify_from_to_cost(cityhall).csv'
@@ -174,6 +177,29 @@ def find_shortest_path(start_node, end_node, start_time, vms_timetable_df):
     else:
         return {'error': 'End node not reached.'}
 
+
+@app.route('/get-node-info', methods=['POST'])
+def get_node_info():
+    data = request.json
+    node_names = data.get('nodeNames')
+
+    if not node_names:
+        return jsonify({'error': 'No node names provided'}), 400
+
+    csv_file_path = os.path.join(os.path.dirname(__file__), 'nodelatlng.csv')
+    df = pd.read_csv(csv_file_path)
+    node_info = []
+
+    for name in node_names:
+        node_row = df[df['Name'] == name]
+        if not node_row.empty:
+            info = {
+                'name': name,
+                'lat': float(node_row.iloc[0]['Latitude']),
+                'lng': float(node_row.iloc[0]['Longitude'])
+            }
+            node_info.append(info)
+    return jsonify(node_info)
 
 if __name__ == '__main__':
     app.run(debug=True)
