@@ -6,7 +6,7 @@ import subprocess
 import os
 from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(__name__)ㅁ
 CORS(app)
 
 # 파일 경로
