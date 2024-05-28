@@ -48,9 +48,10 @@ def request_speed_data(start_time):
     try:
         # 파이썬 스크립트 실행
         script_path = 'generating_train_data.py'
-        subprocess.run(['python', script_path, start_time.strftime('%Y-%m-%d %H:%M:%S')], check=True)
+        subprocess.run(['python', script_path, "--date=" + start_time.strftime('%Y-%m-%d %H:%M')], check=True)
         subprocess.run(["python", "generating_test_data.py"])
-        subprocess.run(["python", "prediction_test.py", "--gcn_bool", "--adjtype", "doubletransition", "--addaptadj"])
+        subprocess.run(["python", "prediction_test.py", "--gcn_bool", "--adjtype", "doubletransition", "--addaptadj", "--num_nodes=249", "--device=cuda:0", 
+            "--checkpoint=garage/metr_exp1_best_2.03.pth", "--data=data/VMS"])
 
         # 데이터 로드
         new_vms_timetable_path = "vms_timetable.h5"  # 새로 생성된 파일의 경로
