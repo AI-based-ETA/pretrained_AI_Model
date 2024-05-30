@@ -1,4 +1,8 @@
-# Graph WaveNet for Deep Spatial-Temporal Graph Modeling
+## 목차
+- [Graph WaveNet for Deep Spatial-Temporal Graph Modeling](#Graph-WaveNet-for-Deep-Spatial-Temporal-Graph-Modeling)
+- [Performance](#Performance)
+
+# Graph WaveNet for Deep Spatial Temporal Graph Modeling
 
 This is the original pytorch implementation of Graph WaveNet in the following paper: 
 [Graph WaveNet for Deep Spatial-Temporal Graph Modeling, IJCAI 2019] (https://arxiv.org/abs/1906.00121).  A nice improvement over GraphWavenet is presented by Shleifer et al. [paper](https://arxiv.org/abs/1912.07390) [code](https://github.com/sshleifer/Graph-WaveNet).
