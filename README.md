@@ -27,7 +27,9 @@ dilated CNN은 긴 길이의 시계열 데이터를 효과적으로 처리할 �
 
 ### GCN: 공간 의존성 포착
 
-<img width="787" alt="Screen Shot 2024-05-30 at 2 48 50 PM" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/ed0f646f-0435-4766-a034-5e04402a8bc9">
+<img width="450" alt="Screen Shot 2024-05-30 at 2 48 50 PM" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/ed0f646f-0435-4766-a034-5e04402a8bc9">
+<img width="450" alt="Screen Shot 2024-05-30 at 2 33 05 PM" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/62738335-87cc-4f5c-9ae5-16eeecdb4389">
+
 
 그래프 기반 컨볼루션 연산을 활용하여 교통량 데이터에서 공간 의존성을 캡처한다. 교툥량 센서의 물리적 위치에 기초하여 그래프를 구성하고, 간선은 센서 간의 쌍방향 거리를 나타낸냅니다. 이러한 연산자를 적용함으로써 컨볼루션 계층은 네트워크 전반에 걸친 교통량 정보의 확산을 효과적으로 모델링한다.
 
