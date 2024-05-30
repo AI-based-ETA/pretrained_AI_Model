@@ -37,6 +37,11 @@ dilated CNN은 긴 길이의 시계열 데이터를 효과적으로 처리할 �
 
 한국도로교통공사 공공데이터포탈의 VDS 1.5만개의 데이터의 70%, 10%, 20%로 나눠서 각각 train, validation, test로 사용하였습니다.
 
+## 평균 학습 시간과 추론 시간
+
+- Average Training Time: 30.3004 secs/epoch
+- Average Inference Time: 1.4278 secs
+
 ## 학습 성능
 
 <img width="500" alt="MAE" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/8fe3047d-3539-408b-a777-e73037372183">
