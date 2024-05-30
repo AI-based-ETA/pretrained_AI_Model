@@ -15,9 +15,7 @@ This is the original pytorch implementation of Graph WaveNet in the following pa
 
 ---
 
-논문에 따르면 32 layer에서 40 layer로 확장하면 학습 성능은 5% 증가하는데 비해 학습 파라미터의 수는 54% 증가한다고 하였습니다.
-
-따라서 논문에서 제시한 모델의 layer 개수와 동일한 32 layer로 모델 학습을 진행하였습니다.
+논문에 따르면 32 layer에서 40 layer로 확장하면 학습 성능은 5% 증가하는데 비해 학습 파라미터의 수는 54% 증가한다고 하였습니다. 따라서 논문에서 제시한 모델의 layer 개수와 동일한 32 layer로 모델 학습을 진행하였습니다.
 
 ### dilated TCN: 시간 의존성 포착
 
