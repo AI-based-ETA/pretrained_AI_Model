@@ -52,11 +52,6 @@ dilated CNN은 긴 길이의 시계열 데이터를 효과적으로 처리할 �
 
 # 추론 성능
 
-<img width="500" alt="MAE" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/1b072a05-2b95-49e9-b5e2-a0cb9e2917ce">
-<img width="500" alt="MAPE" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/f041eb5f-8d8f-4937-af5f-1d9dc0670665">
-<img width="500" alt="RMSE" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/55c2bdd1-e3db-48f1-a835-f5cc4118089d">
-
-
 <table> <thead> <tr><th>예측 시간(분)</th><th>Test Loss</th><th>Test MAPE</th><th>Test RMSE</th></tr></thead>
     <tbody>
         <tr><td>15</td><td>1.7689</td><td>0.0203</td><td>2.9916</td></tr>
@@ -64,3 +59,8 @@ dilated CNN은 긴 길이의 시계열 데이터를 효과적으로 처리할 �
         <tr><td>60</td><td>2.3372</td><td>0.0278</td><td>4.2073</td></tr>
     </tbody>
 </table>
+
+<img width="500" alt="MAE" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/1b072a05-2b95-49e9-b5e2-a0cb9e2917ce">
+<img width="500" alt="MAPE" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/f041eb5f-8d8f-4937-af5f-1d9dc0670665">
+<img width="500" alt="RMSE" src="https://github.com/AI-based-ETA/pretrained_AI_Model/assets/65798779/55c2bdd1-e3db-48f1-a835-f5cc4118089d">
+
